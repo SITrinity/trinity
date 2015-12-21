@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -20,9 +18,77 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <script type="text/javascript">
+        function open_vreality_qr(){
+            $(".all_body").fadeIn(600);
+            $("#vreality").fadeIn(600);
+            alert("Para Cerrar la ventana presionar la tecla Esc");
+        }
+        function open_mreality_qr(){
+            $(".all_body").fadeIn(600);
+            $("#mreality").fadeIn(600);
+            alert("Para Cerrar la ventana presionar la tecla Esc");
+        }
+    </script>
+    <script src="js/jquery.js"></script>
 </head>
-
 <body>
+    <div class="all_body" style="display:none">
+        <center>
+            <div id="vreality" style="display:none" onclick="">
+                <h3 style="color:white;">Para escanear los modelos solo debe abrir en su Smartphone su Scaner de codigo QR favorito o puede descargarlo desde el siguiente link
+                <a href="https://play.google.com/store/apps/details?id=la.droid.qr&hl=es_419" target="_blank">QR Droid Code Scanner</a></h3><br>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4 col-xs-6 thumb">
+                                <a class="thumbnail" href="#">
+                                    <img class="img-responsive" src="images/DNA.png" alt="">
+                                    <h5>DNA</h5>
+                                </a>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-xs-6 thumb">
+                                <a class="thumbnail" href="#">
+                                    <img class="img-responsive" src="images/molecula.png" alt="">
+                                    <h5>Moleculas</h5>
+                                </a>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-xs-6 thumb">
+                                <a class="thumbnail" href="#">
+                                    <img class="img-responsive" src="images/cuerpo.png" alt="">
+                                    <h5>Cuerpo</h5>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            <div id="mreality" style="display:none">
+                <h3 style="color:white;">Para escanear los modelos solo debe abrir en su Smartphone su aplicacion de Realidad Aumentada o puede descargarlo desde el siguiente link
+                <a href="https://play.google.com/store/apps/details?id=com.ar.augment&hl=es_419" target="_blank">Augment</a></h3><br>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4 col-xs-6 thumb">
+                                <a class="thumbnail" href="#">
+                                    <img class="img-responsive" src="images/oxalato.png" alt="">
+                                    <h5>Oxalato</h5>
+                                </a>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-xs-6 thumb">
+                                <a class="thumbnail" href="#">
+                                    <img class="img-responsive" src="images/atomo.png" alt="">
+                                    <h5>Atomo</h5>
+                                </a>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-xs-6 thumb">
+                                <a class="thumbnail" href="#">
+                                    <img class="img-responsive" src="images/QR_DNA.png" alt="">
+                                    <h5>DNA</h5>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </center>
+    </div>
     <!-- Navigation -->
     <nav class="navbar navbar-default topnav" role="navigation">
         <div class="container topnav">
@@ -34,22 +100,22 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand topnav" href="/">Grupo Enl@ce</a>
+                <a class="navbar-brand topnav" href="index.html.erb">Grupo Enl@ce</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a href="trinity.html">Proyecto TRINITY</a>
+                        <a href="trinity.html.erb">Proyecto TRINITY</a>
                     </li>
                     <li>
-                        <a href="enlace.html">Grupo Enl@ce</a>
+                        <a href="enlace.html.erb">Grupo Enl@ce</a>
                     </li>
                     <li>
-                        <a href="#">Nuestro Equipo</a>
+                        <a href="team.html.erb">Nuestro Equipo</a>
                     </li>
                     <li>
-                        <a href="designs.html">Realidad Aumentada</a>
+                        <a href="#">Realidad Aumentada</a>
                     </li>
                 </ul>
             </div>
@@ -57,54 +123,32 @@
         </div>
         <!-- /.container -->
     </nav>
-
-    <!-- Page Content -->
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <h1 class="page-header text-center" style="color:#1caad9">Realidad Virtual QR</h1>
-            </div>
-
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                <a class="thumbnail" href="#">
-                    <img class="img-responsive" src="images/oxalato.png" alt="">
-                </a>
-            </div>
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                <a class="thumbnail" href="#">
-                    <img class="img-responsive" src="images/atomo.png" alt="">
-                </a>
-            </div>
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                <a class="thumbnail" href="#">
-                    <img class="img-responsive" src="images/QR_DNA.png" alt="">
-                </a>
+    <center>
+        <!-- Page Content -->
+        <div class="container">
+            <div class="row" style="position: relative;padding-top: 10%;">
+                <div class="col-lg-6 col-sm-6">
+                    <img class="img-responsive" src="images/designs.png" alt="">
+                    <h3 style="color:blue"><a href="#" onclick="open_vreality_qr();">Realidad Virtual QR</a></h3><hr>
+                </div>
+                <div class="col-lg-6 col-sm-6">
+                    <img class="img-responsive" src="images/designs.png" alt="">
+                    <h3 style="color:blue"><a href="#" onclick="open_mreality_qr();">Realidad 3D modelos</a></h3><hr>
+                </div>
             </div>
         </div>
-    </div>
-    <!-- /.container -->
-	<div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <h1 class="page-header text-center" style="color:#1caad9">Realidad 3D modelos</h1>
-            </div>
-
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                <a class="thumbnail" href="#">
-                    <img class="img-responsive" src="images/DNA.png" alt="">
-                </a>
-            </div>
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                <a class="thumbnail" href="#">
-                    <img class="img-responsive" src="images/molecula.png" alt="">
-                </a>
-            </div>
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                <a class="thumbnail" href="#">
-                    <img class="img-responsive" src="images/cuerpo.png" alt="">
-                </a>
-            </div>
-        </div>
-    </div>
+        <!-- /.container -->
+    </center>
+    <script type="text/javascript">
+        $(document).keyup(function(event){
+            if(event.which==27 || event.which==8)
+            {
+                $(".all_body").hide();
+                $("#vreality").hide();
+                $("#mreality").hide();
+            }
+        });
+    </script>
+    <script src="js/bootstrap.min.js"></script>
 </body>
 </html>
