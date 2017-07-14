@@ -1,0 +1,36 @@
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+}
+.topnav {
+    font-size: 14px; 
+}
+
+.navbar-default {
+  background-color: rgba(255,255,255,0.80);
+  border-color: #e7e7e7;
+}
+
+.logo_title{
+    width: 25px;
+    height: 25px;
+    float: left;
+}
+
+#frame_ua{
+    width: 100%;
+    height: 516px;
+ }
