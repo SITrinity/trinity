@@ -15,6 +15,7 @@
     <link href="../../public/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="../../public/css/navbar.css">
     <link rel="stylesheet" type="text/css" href="../../public/css/trinity.css">
+    <link href="../../public/css/float_button.css" rel="stylesheet" type="text/css">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -36,22 +37,22 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand topnav" href="../index.html"><img title="logo image" class="logo_title" src="../../public/images/trinity_logo.png">Trinity proyect</a>
+                <a class="navbar-brand topnav" href="index.html"><img title="logo image" class="logo_title" src="../../public/images/trinity_logo.png">Trinity proyect</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a href="#">Semillero TRINITY</a>
+                        <a href="#">TRINITY</a>
                     </li>
                     <li>
-                        <a href="enlace.html">Grupo Enl@ce</a>
+                        <a href="../ES/enlace.html">Enl@ce</a>
                     </li>
                     <li>
-                        <a href="team.html">Nuestro Equipo</a>
+                        <a href="team.html">Team</a>
                     </li>
                     <li>
-                        <a href="designs.html">Realidad Aumentada</a>
+                        <a href="about.html">about</a>
                     </li>
                 </ul>
             </div>
@@ -81,8 +82,22 @@
             <p>each of proposals how in software like in hardware be will focused to education and establishment of Pedagogical tools, Developing in the artistic field, in the school stage, in the processes of inclusion to people with Physical limitations and everything Academic programs Interested in participating, Given that the project would spand    transversally every areas of knowledge. Is important stand out that gone to consult different research that coincide in report a positive experience about implementation of Augmented Reality for education.</p>
         </div>
     </div>
+    <div class="btn_container">
+            <button class="btn_principal">
+                <span>+</span>
+            </button>
+            <button class="btn_float english_button" onclick="change_language_es();">
+                <span>ES</span>
+            </button>
+        </div>
+        <script type="text/javascript">
+            function change_language_es(){
+                document.location.href = "../ES/trinity.html";
+            }
+        </script>
     <!-- /.container -->
     <script src="../../public/js/jquery.js"></script>
     <script src="../../public/js/bootstrap.min.js"></script>
+    <script src="../../public/js/float_button.js"></script>
 </body>
 </html>

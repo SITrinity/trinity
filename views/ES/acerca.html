@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Semillero Trinity all info">
+        <meta name="author" content="Edwin Marquez">
+        <title>Trinity</title>  
+        
+        <link href="../../public/css/bootstrap.min.css" rel="stylesheet">
+        
+        <link rel="stylesheet" type="text/css" href="../../public/css/navbar.css">
+        
+        <link href="../../public/css/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="../../public/css/trinity.css">
+        <link href="../../public/css/float_button.css" rel="stylesheet" type="text/css">
+    </head>
+
+    <body>
+        <div id="background" id="trinity_logo"></div>
+        <nav class="navbar navbar-default navbar-fixed-top topnav">
+            <div class="container topnav">
+                
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand topnav" href="index.html"><img title="logo image" class="logo_title" src="../../public/images/trinity_logo.png">Proyecto Trinity</a>
+                </div>
+                
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="trinity.html">Semillero TRINITY</a>
+                        </li>
+                        <li>
+                            <a href="enlace.html">Grupo Enlace</a>
+                        </li>
+                        <li>
+                            <a href="team.html">Nuestro Equipo</a>
+                        </li>
+                        <li>
+                             <a href="#">Acerca</a>
+                        </li>
+                    </ul>
+                </div>          
+            </div>            
+        </nav>
+        <div class="container" style="padding-top: 17%">
+            <div class="row">
+                <div class="col-lg-12 col-sm-12">
+                    <p class="text-center">Creada por:  Edwin Marquez Melendez</p>
+                    <p class="text-center">Traduccion al Ingles:  Fabian Andres Gonzalez</p>
+                    <p class="text-center">Coordinadora del semillero:  DELMA ROCHA ALVAREZ</p>
+                    <p class="text-center">Informacion:</p>
+                    <p class="text-center"><a href="https://www.uniatlantico.edu.co/uatlantico/investigacion/grupo-enlace">https://www.uniatlantico.edu.co/uatlantico/investigacion/grupo-enlace</a></p>
+                </div>  
+            </div>
+        </div>
+        <div class="btn_container">
+            <button class="btn_principal">
+                <span>+</span>
+            </button>
+            <button class="btn_float english_button" onclick="change_language_en();">
+                <span>EN</span>
+            </button>
+        </div>
+        <script type="text/javascript">
+        function change_language_en(){
+            document.location.href = "../EN/about.html";
+        }
+    </script>
+        <script src="../../public/js/jquery.js"></script>
+        <script src="../../public/js/bootstrap.min.js"></script>
+        <script src="../../public/js/float_button.js"></script>
+    </body>
+</html>

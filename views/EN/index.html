@@ -15,7 +15,7 @@
         
         <link href="../../public/css/font-awesome/css/font-awesome.min.css" rel="stylesheet">
         <link href="../../public/css/font.css" rel="stylesheet" type="text/css">
-        <!--<link href="../../public/css/float_button.css" rel="stylesheet" type="text/css">-->
+        <link href="../../public/css/float_button.css" rel="stylesheet" type="text/css">
         
         <script src="../../public/js/html5shiv.js"></script>
         <script src="../../public/js/respond.min.js"></script>
@@ -32,22 +32,22 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand topnav" href="index.html"><img title="logo image" class="logo_title" src="../../public/images/trinity_logo.png">Trinity proyect</a>
+                    <a class="navbar-brand topnav" href="index.html"><img title="logo image" class="logo_title" src="../../public/images/trinity_logo.png">Trinity Proyect</a>
                 </div>
                 
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav navbar-right">
                         <li>
-                            <a href="#project">Semillero TRINITY</a>
+                            <a href="#project">TRINITY</a>
                         </li>
                         <li>
-                            <a href="#project">Grupo Enlace</a>
+                            <a href="#project">Enlace Group</a>
                         </li>
                         <li>
                             <a href="#project">Our Team</a>
                         </li>
                         <li>
-                             <a href="views/designs.html">Augmented Reality</a>
+                              <a href="views/EN/about.html">About</a>
                         </li>
                     </ul>
                 </div>          
@@ -91,7 +91,7 @@
                     </div>
                     <div class="col-lg-4 col-sm-4" style="text-align:center">
                         <img class="img-responsive img-rounded" width="312" height="310" src="../../public/images/enlace.png" alt="Grupo enlace">
-                        <button type="submit" id="enlace" onclick="change_page(this.id)" class="btn btn-info">Grupo Enlace</button>
+                        <button type="submit" onclick="window.location.href='../ES/enlace.html'" class="btn btn-info">Grupo Enlace</button>
                     </div>
                     <div class="col-lg-4 col-sm-4" style="text-align:center">
                         <img class="img-responsive img-rounded" width="312" height="310" src="../../public/images/equipo.png" alt="Grupo enlace">
@@ -103,10 +103,20 @@
         <script type="text/javascript">
             function change_page(page_name)
             {
-                document.location.href = "views/" + page_name + ".html";
+                document.location.href = page_name + ".html";
+            }
+            function change_language_es(){
+                document.location.href = "../../index.html";
             }
         </script>
-        
+        <div class="btn_container">
+            <button class="btn_principal">
+                <span>+</span>
+            </button>
+            <button class="btn_float english_button" onclick="change_language_es();">
+                <span>ES</span>
+            </button>
+        </div>
         <script src="../../public/js/jquery.js"></script>
         <script src="../../public/js/bootstrap.min.js"></script>
         <script src="../../public/js/float_button.js"></script>

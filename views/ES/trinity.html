@@ -12,9 +12,10 @@
     <title>Trinity proyect</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="../public/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="../public/css/navbar.css">
-    <link rel="stylesheet" type="text/css" href="../public/css/trinity.css">
+    <link href="../../public/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../../public/css/navbar.css">
+    <link rel="stylesheet" type="text/css" href="../../public/css/trinity.css">
+    <link href="../../public/css/float_button.css" rel="stylesheet" type="text/css">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -36,7 +37,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand topnav" href="../index.html"><img title="logo image" class="logo_title" src="../public/images/trinity_logo.png">Trinity proyect</a>
+                <a class="navbar-brand topnav" href="../../index.html"><img title="logo image" class="logo_title" src="../../public/images/trinity_logo.png">Trinity proyect</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -51,7 +52,7 @@
                         <a href="team.html">Nuestro Equipo</a>
                     </li>
                     <li>
-                        <a href="designs.html">Realidad Aumentada</a>
+                        <a href="acerca.html">Acerca</a>
                     </li>
                 </ul>
             </div>
@@ -74,15 +75,29 @@
                     <div class="col-lg-9">
                         <p>El proyecto busca fortalecer los procesos de Enseñanza y aprendizaje en la Universidad del Atlántico, a través de la creación de marcadores QR/AR,  libros de marcadores QR/AR y un dispositivo que permita la interface con la realidad virtual como resultado  final esperado. El proyecto solicita que los estudiantes trabajen los conceptos de diseño, modelamiento de imágenes en formato 3D en dos lenguajes a elegir: el afiche y el video,  que serán proyectados posteriormente en pirámide holográfica previamente construida, al igual que  la creación de QR/ AR Books; mediante el uso de un software especializado (Aumentaty Author - 2012) y una metodología de Análisis de la Gestión del Ciclo de Vida (LCAM, Life Cycle Análisis Management).</p>   
                     </div>
-                    <img src="../public/images/qr_page.png" alt="...">
+                    <img src="../../public/images/qr_page.png" alt="...">
                 </div>
             </div>
             
             <p>Cada una de las propuestas tanto en software como en hardware serán enfocadas hacia la educación y establecimiento de unas herramientas pedagógicas, desenvolviéndose  en el campo artístico,  en la etapa preescolar, en los procesos de inclusión social para la población con limitaciones físicas y todos los demás programas académicos interesados en participar, dado que el proyecto abarcaría de manera transversal todas las áreas del conocimiento. Es Importante resaltar que fueron consultadas diferentes investigaciones que coinciden en reportar experiencias positivas acerca de la implementación de la Realidad Aumentada para la Educación.</p>
         </div>
     </div>
+    <div class="btn_container">
+        <button class="btn_principal">
+            <span>+</span>
+        </button>
+        <button class="btn_float english_button" onclick="change_language_en();">
+            <span>EN</span>
+        </button>
+    </div>
+    <script type="text/javascript">
+        function change_language_en(){
+            document.location.href = "../EN/trinity.html";
+        }
+    </script>
     <!-- /.container -->
-    <script src="../public/js/jquery.js"></script>
-    <script src="../public/js/bootstrap.min.js"></script>
+    <script src="../../public/js/jquery.js"></script>
+    <script src="../../public/js/bootstrap.min.js"></script>
+    <script src="../../public/js/float_button.js"></script>
 </body>
 </html>

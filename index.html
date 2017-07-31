@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="Semillero Trinity all info">
         <meta name="author" content="Edwin Marquez">
-        <title>Trinity proyect</title>  
+        <title>Trinity</title>  
         
         <link href="public/css/bootstrap.min.css" rel="stylesheet">
         
@@ -15,7 +15,7 @@
         
         <link href="public/css/font-awesome/css/font-awesome.min.css" rel="stylesheet">
         <link href="public/css/font.css" rel="stylesheet" type="text/css">
-        <!--<link href="public/css/float_button.css" rel="stylesheet" type="text/css">-->
+        <link href="public/css/float_button.css" rel="stylesheet" type="text/css">
         
         <script src="public/js/html5shiv.js"></script>
         <script src="public/js/respond.min.js"></script>
@@ -32,7 +32,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand topnav" href="index.html"><img title="logo image" class="logo_title" src="public/images/trinity_logo.png">Trinity proyect</a>
+                    <a class="navbar-brand topnav" href="index.html"><img title="logo image" class="logo_title" src="public/images/trinity_logo.png">Proyecto Trinity</a>
                 </div>
                 
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -47,7 +47,7 @@
                             <a href="#project">Nuestro Equipo</a>
                         </li>
                         <li>
-                             <a href="views/designs.html">Realidad Aumentada</a>
+                             <a href="views/EN/about.html">About</a>
                         </li>
                     </ul>
                 </div>          
@@ -64,8 +64,8 @@
                             <h4>incorporacion del concepto y la técnica de la Realidad  Aumentada (RA)</h4>
                         </div>
                         <h3 class="center">Nuestros Proyectos</h3>
-                        <a href="views/arprende.html"><img src="public/images/arprende.png" alt="..." class="img-thumbnail lg_proyect"></a>
-                        <a href="views/interaktuar.html"><img src="public/images/interaktuar.png" alt="..." class="img-thumbnail lg_proyect"></a>
+                        <a href="views/ES/arprende.html"><img src="public/images/arprende.png" alt="..." class="img-thumbnail lg_proyect"></a>
+                        <a href="views/ES/interaktuar.html"><img src="public/images/interaktuar.png" alt="..." class="img-thumbnail lg_proyect"></a>
                     </div><br>
                     <div class="hidden-xs">
                          <iframe src="https://sketchfab.com/models/54948d76cd214065a8f033d54da15e5f/embed?ui_watermark=0&amp;ui_stop=0&amp;autospin=0.4&amp;scrollwheel=0&amp;ui_snapshots=0&amp;internal=1&amp;autostart=1&amp;ui_infos=0&amp;transparent=1" data-src="https://sketchfab.com/models/ab41c26ff7ed4821a8f6a2fdfa096f61/embed?ui_controls=0&amp;ui_watermark=0&amp;ui_stop=0&amp;autospin=0.2&amp;scrollwheel=0&amp;ui_snapshots=0&amp;internal=1&amp;autostart=1&amp;ui_infos=0&amp;transparent=1" width="540" height="580" allowtransparency="true" frameBorder="0">
@@ -84,7 +84,7 @@
             <div class="container">
                 <div class="row">
                   <div class="col-lg-4 col-sm-4" style="text-align:center">
-                    <img class="img-responsive img-rounded" width="312" height="310" src="public/images/enlace.png" alt="Grupo enlace">
+                    <img class="img-responsive img-rounded" width="312" height="310" src="public/images/trinity_logo.png" alt="Grupo enlace">
                         <!-- <iframe src="https://sketchfab.com/models/54948d76cd214065a8f033d54da15e5f/embed?ui_watermark=0&amp;ui_stop=0&amp;autospin=0.4&amp;scrollwheel=0&amp;ui_snapshots=0&amp;internal=1&amp;autostart=1&amp;ui_infos=0&amp;transparent=1" data-src="https://sketchfab.com/models/ab41c26ff7ed4821a8f6a2fdfa096f61/embed?ui_controls=0&amp;ui_watermark=0&amp;ui_stop=0&amp;autospin=0.2&amp;scrollwheel=0&amp;ui_snapshots=0&amp;internal=1&amp;autostart=1&amp;ui_infos=0&amp;transparent=1" width="320" height="320" allowtransparency="true" frameBorder="0">
                         </iframe> -->
                         <button type="submit" id="trinity" onclick="change_page(this.id)" class="btn btn-info">Semillero Trinity</button>
@@ -94,19 +94,29 @@
                         <button type="submit" id="enlace" onclick="change_page(this.id)" class="btn btn-info">Grupo Enlace</button>
                     </div>
                     <div class="col-lg-4 col-sm-4" style="text-align:center">
-                        <img class="img-responsive img-rounded" width="312" height="310" src="public/images/enlace.png" alt="Grupo enlace">
+                        <img class="img-responsive img-rounded" width="312" height="310" src="public/images/Equipo.png" alt="Grupo enlace">
                         <button type="submit" id="team" onclick="change_page(this.id)" class="btn btn-info">Nuestro Equipo</button>
                     </div>  
                 </div>
             </div>
         </div>
+        <div class="btn_container">
+            <button class="btn_principal">
+                <span>+</span>
+            </button>
+            <button class="btn_float english_button" onclick="change_language_en();">
+                <span>EN</span>
+            </button>
+        </div>
         <script type="text/javascript">
             function change_page(page_name)
             {
-                document.location.href = "views/" + page_name + ".html";
+                document.location.href = "views/ES/" + page_name + ".html";
+            }
+            function change_language_en(){
+                document.location.href = "views/EN/index.html";
             }
         </script>
-        
         <script src="public/js/jquery.js"></script>
         <script src="public/js/bootstrap.min.js"></script>
         <script src="public/js/float_button.js"></script>
