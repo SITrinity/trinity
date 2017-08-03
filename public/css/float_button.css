@@ -26,7 +26,7 @@
 span{
   transition:.5s;
 }
-.btn_principal:hover span{
+.btn_principal:hover{
   transform:rotate(360deg);
 }
 .btn_principal:active{

@@ -47,7 +47,7 @@
                             <a href="#project">Our Team</a>
                         </li>
                         <li>
-                              <a href="views/EN/about.html">About</a>
+                              <a href="about.html">About</a>
                         </li>
                     </ul>
                 </div>          
@@ -64,8 +64,8 @@
                             <h4>Implemention of concept and the techniqhe at the Augmented Reality (AR)</h4>
                         </div>
                         <h3 class="center">Ours Projects</h3>
-                        <a href="views/arprende.html"><img src="../../public/images/arprende.png" alt="..." class="img-thumbnail lg_proyect"></a>
-                        <a href="views/interaktuar.html"><img src="../../public/images/interaktuar.png" alt="..." class="img-thumbnail lg_proyect"></a>
+                        <a href="arprende.html"><img src="../../public/images/arprende.png" alt="..." class="img-thumbnail lg_proyect"></a>
+                        <a href="interaktuar.html"><img src="../../public/images/interaktuar.png" alt="..." class="img-thumbnail lg_proyect"></a>
                     </div><br>
                     <div class="hidden-xs">
                          <iframe src="https://sketchfab.com/models/54948d76cd214065a8f033d54da15e5f/embed?ui_watermark=0&amp;ui_stop=0&amp;autospin=0.4&amp;scrollwheel=0&amp;ui_snapshots=0&amp;internal=1&amp;autostart=1&amp;ui_infos=0&amp;transparent=1" data-src="https://sketchfab.com/models/ab41c26ff7ed4821a8f6a2fdfa096f61/embed?ui_controls=0&amp;ui_watermark=0&amp;ui_stop=0&amp;autospin=0.2&amp;scrollwheel=0&amp;ui_snapshots=0&amp;internal=1&amp;autostart=1&amp;ui_infos=0&amp;transparent=1" width="540" height="580" allowtransparency="true" frameBorder="0">
@@ -91,10 +91,10 @@
                     </div>
                     <div class="col-lg-4 col-sm-4" style="text-align:center">
                         <img class="img-responsive img-rounded" width="312" height="310" src="../../public/images/enlace.png" alt="Grupo enlace">
-                        <button type="submit" onclick="window.location.href='../ES/enlace.html'" class="btn btn-info">Grupo Enlace</button>
+                        <button type="submit" id="enlace" onclick="change_page(this.id)" class="btn btn-info">Grupo Enlace</button>
                     </div>
                     <div class="col-lg-4 col-sm-4" style="text-align:center">
-                        <img class="img-responsive img-rounded" width="312" height="310" src="../../public/images/equipo.png" alt="Grupo enlace">
+                        <img class="img-responsive img-rounded" width="312" height="310" src="../../public/images/Equipo.png" alt="Grupo enlace">
                         <button type="submit" id="team" onclick="change_page(this.id)" class="btn btn-info">Our Team</button>
                     </div>  
                 </div>
@@ -111,7 +111,7 @@
         </script>
         <div class="btn_container">
             <button class="btn_principal">
-                <span>+</span>
+                <i class="fa fa-language" aria-hidden="true">
             </button>
             <button class="btn_float english_button" onclick="change_language_es();">
                 <span>ES</span>
